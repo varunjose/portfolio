@@ -45,9 +45,9 @@
   --mb-3: 3rem;
 
   /* ============ z index ============ */
-  -z-tooltip: 10;
-  -z-fixed: 100;
-  -z-modal: 1000;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
 }
 
 /* Responsive Typography */
@@ -196,8 +196,15 @@ img {
 /* For medium devices */
 
 @media screen and (max-width: 768px) {
+  body {
+    margin: 0 0 var(--header-height) 0;
+  }
     .section {
       padding: 2rem 0 4rem;
+    }
+
+    .section__subtitle {
+      margin-bottom: var(--mb-3);
     }
   }
 
