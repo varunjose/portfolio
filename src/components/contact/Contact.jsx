@@ -47,7 +47,7 @@ const Contact = () => {
                             <h3 className='contact__card-title'>Message</h3>
                             <span className='contact__card-data'>5185964160</span>
 
-                            <a href='mailto:example@gmail.com' className='contact__button'>Write me 
+                            <a href='sms:+15185964160' className='contact__button'>Write me 
                                 <i className='bx bx-right-arrow-alt contact__button-icon'></i>
                             </a>
 

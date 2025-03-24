@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fd0b464e.css",
+    "main.js": "/static/js/main.aa800f34.js",
+    "static/media/hero1.jpg": "/static/media/hero1.3b4ab35262557a41d7be.jpg",
+    "static/media/VarunJoseM.pdf": "/static/media/VarunJoseM.b529987575688de308f5.pdf",
+    "index.html": "/index.html",
+    "main.fd0b464e.css.map": "/static/css/main.fd0b464e.css.map",
+    "main.aa800f34.js.map": "/static/js/main.aa800f34.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fd0b464e.css",
+    "static/js/main.aa800f34.js"
+  ]
+}

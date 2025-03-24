@@ -1,30 +1,30 @@
-.projects__container {
+.experience__container {
     grid-template-columns: repeat(3, 270px);
     justify-content: center;
     column-gap: 1.8rem;
 }
 
 
-.projects__content {
+.experience__content {
     position: relative;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: var(--container-color);
     padding: 6rem 0 2rem 2rem;
 }
 
-.projects__title {
+.experience__title {
     font-size: var(--h3-font-size);
     margin-bottom: var(--mb-0.5);
     font-weight: var(--font-medium);
 }
 
-.projects__subtitle {
+.experience__subtitle {
     font-size: var(--small-font-size);
     font-weight: var(--font-medium);
     margin-bottom: var(--mb-1);
 }
 
-.projects__button{
+.experience__button{
     color: var(--title-color);
     font-size: var(--small-font-size);
     display: inline-flex;
@@ -33,16 +33,16 @@
     column-gap: 0.25rem;
 }
 
-.projects__button-icon {
+.experience__button-icon {
     font-size: 1rem;
     transition: 0.3s;
 }
 
-.projects__button:hover .projects__button-icon {
+.experience__button:hover .experience__button-icon {
     transform: translateX(0.25rem);
 }
 
-.projects__icon {
+.experience__icon {
     display: block;
     font-size: 2rem;
     color: var(--title-color);
@@ -50,7 +50,7 @@
 }
 
 
-.projects__model {
+.experience__model {
     position: fixed;
     top: 0;
     left: 0;
@@ -67,7 +67,7 @@
     transition: 0.3s;
 }
 
-.projects__model-content {
+.experience__model-content {
     width: 500px;
     position: relative;
     background-color: var(--container-color);
@@ -75,7 +75,7 @@
     border-radius: 1.5rem;
 }
 
-.projects__model-close {
+.experience__model-close {
     position: absolute;
     top: 1.5rem;
     right: 1.5rem;
@@ -84,39 +84,39 @@
     cursor: pointer;
 }
 
-.projects__model-title,
-.projects__model-description {
+.experience__model-title,
+.experience__model-description {
     text-align: center;
 }
 
-.projects__model-title {
+.experience__model-title {
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
     margin-bottom: var(--mb-1);
 }
 
-.projects__model-description {
+.experience__model-description {
     font-size: var(--small-font-size);
     padding: 0 3.5rem;
     margin-bottom: var(--mb-2);
 }
 
-.projects__model-services {
+.experience__model-services {
     row-gap: 0.75rem;
 }
 
-.projects__model-service {
+.experience__model-service {
     display: flex;
     align-items: center;
     column-gap: 0.5rem;
 }
 
-.projects__model-icon {
+.experience__model-icon {
     font-size: 1.1rem;
     color: var(--title-color);
 }
 
-.projects__model-info {
+.experience__model-info {
     font-size: var(--small-font-size);
 }
 
@@ -131,7 +131,7 @@
 
 /* For large devices */
 @media screen and (max-width: 992px) {
-    .projects__container {
+    .experience__container {
         grid-template-columns: repeat(3, 218px);
     } 
   
@@ -139,26 +139,26 @@
   /* For medium devices */
   
   @media screen and (max-width: 768px) {
-    .projects__container {
+    .experience__container {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .projects__content {
+    .experience__content {
         padding: 3.5rem 0.5rem 1.2rem 1.5rem;
     }
 
-    .projects__icon{
+    .experience__icon{
         font-size: 1.5rem;
     }
 
     }
   
   @media  screen and (max-width: 576px) {
-    .projects_model-content {
+    .experience_model-content {
         padding: 4.5rem 1.5rem 1.5rem;
     }
 
-    .projects__model-description {
+    .experience__model-description {
         padding: 0;
     }
     
@@ -167,10 +167,10 @@
   /* For small devices */
   
   @media screen and (max-width: 350px) {
-    .projects__container {
+    .experience__container {
         grid-template-columns: max-content;
     }
-    .projects__content{
+    .experience__content{
         padding: 6rem;
     }
   
