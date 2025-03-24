@@ -50,12 +50,20 @@
     color: var(--title-color-dark);
 }
 
+
+.scroll-header {
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
+}
+
 /* ================= BREAKPOINTS ================= */
 
-@media screen and  (max-width: 768px) {
-    .header{
-        top: initial;
-        bottom: 0;
+@media screen and (max-width: 768px) {
+    .header {
+        position: fixed; /* Ensure the header is fixed */
+        top: 0; /* Position it at the top */
+        left: 0; /* Align it to the left */
+        width: 100%; /* Make it full width */
+        z-index: 1000; /* Ensure it stays above other content */
     }
 
     .nav {
