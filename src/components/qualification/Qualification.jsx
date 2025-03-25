@@ -63,11 +63,11 @@ const Qualification = () => {
             <div className={ toggleState === 2 ? 'qualification__content qualification__content-active' : 'qualification__content'}>
               <div className='qualification__data'>
                 <div>
-                  <h3 className='qualification__title'>Computer  Engineering</h3>
-                  <span className='qualification__subtitle'>The University of Texas at Dallas</span>
+                  <h3 className='qualification__title'>NYS Department of Transportation</h3>
+                  <span className='qualification__subtitle'>Data Analyst Intern</span>
                   <div className='qualification__calendar'>
                     <i className='uil uil-calendar-alt'></i>
-                    2019 - 2021
+                    Sep 2024-May 2025
                   </div>
                 </div>
                 <div>
@@ -84,14 +84,32 @@ const Qualification = () => {
                   <span className='qualification__line'></span>
                 </div>
                 <div>
-                  <h3 className='qualification__title'>Computer Science Engineering</h3>
-                  <span className='qualification__subtitle'>The University of Texas at Dallas</span>
+                  <h3 className='qualification__title'>Sodexo</h3>
+                  <span className='qualification__subtitle'>ITS Student Assistant</span>
                   <div className='qualification__calendar'>
                     <i className='uil uil-calendar-alt'></i>
-                    2019 - 2021
+                    Sep 2023-Jun 2024
                   </div>
                 </div>
               </div>
+
+
+              <div className='qualification__data'>
+                <div>
+                  <h3 className='qualification__title'>Cognier Insights</h3>
+                  <span className='qualification__subtitle'>Software Engineer Intern</span>
+                  <div className='qualification__calendar'>
+                    <i className='uil uil-calendar-alt'></i>
+                    Sep 2024-May 2025
+                  </div>
+                </div>
+                <div>
+                  <span className='qualification__rounder'></span>
+                  <span className='qualification__line'></span>
+                </div>
+              </div>
+
+
             </div>
           </div>
         </div>  

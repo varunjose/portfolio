@@ -31,9 +31,9 @@ const Contact = () => {
                             <i className='bx bx-mail-send contact__card-icon'></i>
 
                             <h3 className='contact__card-title'>Email</h3>
-                            <span className='contact__card-data'>user@gmail.com</span>
+                            <span className='contact__card-data'>@email.com</span>
 
-                            <a href='mailto:example@gmail.com' className='contact__button'>Write me 
+                            <a href='mailto:varunjosemadanu@gmail.com' className='contact__button'>Write me 
                                 <i className='bx bx-right-arrow-alt contact__button-icon'></i>
                             </a>
 
@@ -45,7 +45,7 @@ const Contact = () => {
                             <i className='bx bx-message contact__card-icon'></i>
 
                             <h3 className='contact__card-title'>Message</h3>
-                            <span className='contact__card-data'>5185964160</span>
+                            <span className='contact__card-data'>Mobile</span>
 
                             <a href='sms:+15185964160' className='contact__button'>Write me 
                                 <i className='bx bx-right-arrow-alt contact__button-icon'></i>
@@ -58,9 +58,9 @@ const Contact = () => {
                             <i className='bx bxl-instagram contact__card-icon'></i>
 
                             <h3 className='contact__card-title'>Instagram</h3>
-                            <span className='contact__card-data'>varunjose_07</span>
+                            <span className='contact__card-data'>social</span>
 
-                            <a href='mailto:example@gmail.com' className='contact__button'>Connect 
+                            <a href='https://www.instagram.com/varunjose_7/' className='contact__button'>Connect 
                                 <i className='bx bx-right-arrow-alt contact__button-icon'></i>
                             </a>
 
