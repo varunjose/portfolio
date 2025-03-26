@@ -32,19 +32,24 @@ const Header = () => {
                         <i className='uil uil-user nav__icon'></i> About
                     </a></li>
 
+                    <li className='nav__item'><a href="#experience" onClick={() => setActiveNav ('#experience')} 
+                    className={activeNav === '#experience' ? 'nav__link active-link' : 'nav__link'}>
+                        <i className='uil uil-bag-alt nav__icon'></i> Experience
+                    </a></li>
+
                     <li className='nav__item'><a href="#skills" onClick={() => setActiveNav ('#skills')} 
                     className={activeNav === '#skills' ? 'nav__link active-link' : 'nav__link'}>
                         <i className='uil uil-file-alt nav__icon'></i> Skills
                     </a></li>
 
-                    <li className='nav__item'><a href="#experience" onClick={() => setActiveNav ('#experience')} 
-                    className={activeNav === '#experience' ? 'nav__link active-link' : 'nav__link'}>
-                        <i className='uil uil-file-alt nav__icon'></i> Experience
-                    </a></li>
-
                     <li className='nav__item'><a href="#qualification" onClick={() => setActiveNav ('#qualification')} 
                     className={activeNav === '#qualification' ? 'nav__link active-link' : 'nav__link'}>
-                        <i className='uil uil-file-alt nav__icon'></i> Qualification
+                        <i className='uil uil-award-alt nav__icon'></i> Qualification
+                    </a></li>
+
+                    <li className='nav__item'><a href="#projects" onClick={() => setActiveNav ('#projects')} 
+                    className={activeNav === '#projects' ? 'nav__link active-link' : 'nav__link'}>
+                        <i className='uil uil-folder-check nav__icon'></i> Projects
                     </a></li>
 
 

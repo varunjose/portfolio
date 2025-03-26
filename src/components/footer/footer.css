@@ -94,6 +94,10 @@
         margin-left: 2rem;
         row-gap: 1rem;
     }
+    .footer__container {
+        padding: 2rem 0 3rem;
+        margin-bottom: -100px;
+    }
 
 
 

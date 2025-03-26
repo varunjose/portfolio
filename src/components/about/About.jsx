@@ -19,7 +19,7 @@ const About = () => {
                  I specialize in building responsive web and desktop applications 
                  using technologies like React.js, Node.js, C# (.NET), and C++, 
                  focusing on frontend-backend development and database management.</p>
-            <a href={CV} download='' className='button button--flex'>Download Resume
+            <a href={CV} download='VarunJose.pdf' className='button button--flex'>Download Resume
             <svg
                 class="button__icon"
                 xmlns="http://www.w3.org/2000/svg"
