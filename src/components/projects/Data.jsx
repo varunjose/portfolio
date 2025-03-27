@@ -17,7 +17,7 @@ export const projectsData = [
         id: 2,
         image: work2,
         title: 'Sleep Apnea Detection',
-        subtitle: 'Predicting Sleep Apnea using Machine Learning',
+        subtitle: 'Developed a deep learning model for predicting obstructive sleep apnea.',
         category: 'Machine Learning',
         link: "https://github.com/varunjose/SleepApneaPrediction",
     },
