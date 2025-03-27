@@ -8,26 +8,32 @@ export const projectsData = [
     {
         id: 1,
         image: work1,
-        title: 'Website',
+        title: 'Portfolio',
+        subtitle: 'Created my personal portfolio using ReactJS',
         category: 'Web',
+        link: 'https://github.com/varunjose/portfolio',
     },
     {
         id: 2,
         image: work2,
-        title: 'ML model',
+        title: 'Sleep Apnea Detection',
+        subtitle: 'Predicting Sleep Apnea using Machine Learning',
         category: 'Machine Learning',
+        link: "https://github.com/varunjose/SleepApneaPrediction",
     },
     {
         id: 3,
         image: work3,
         title: 'E-commerce',
         category: 'Web',
+        link: 'https://www.google.com',
     },
     {
         id: 4,
         image: work4,
         title: 'ML model',
         category: 'Machine Learning',
+        link : 'https://www.google.com',
     }
 ];
 

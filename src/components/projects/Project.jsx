@@ -20,8 +20,11 @@ const Project = () => {
         }
     }, [item]);
 
+
+
     const handleClick = (e, index) => {
         setItem({ name: e.target.textContent });
+        setActive(index);
     }
   return (
     <div>
@@ -29,15 +32,15 @@ const Project = () => {
       {projectsNav.map((item, index) => {
         return <span onClick={(e) => {
             handleClick(e, index);
-        }} className='projects__item' key={index}>{item.name}
+        }} className={`${active === index ? 'active-projects' : ''} projects__item`} key={index}>{item.name}
         </span>
       })}
     </div>
 
     <div className='projects__container container grid'>
         {
-            projectsData.map((item) => {
-                return <ProjectsItems item={item} key={item.id} />
+            projects.map((item) => {
+                return <ProjectsItems item={item} link={item.link} key={item.id} />
             })
         }
     </div>

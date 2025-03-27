@@ -43,7 +43,12 @@
 .projects__title {
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
-    margin-bottom: var(--mb-0-5);
+}
+
+.projects__subtitle {
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-1);
+    width: 290px;
 }
 
 .projects__button {
@@ -63,3 +68,57 @@
     transform: translateX(0.25rem);
 }
 
+/** active projects */
+
+.active-projects {
+    background-color: var(--title-color);
+    color: var(--container-color);
+}
+
+/* ============= BREAKPOINTS ============= */
+@media screen and (max-width: 992px) {
+    .projects__container {
+        gap: 1.25rem;
+    }
+
+    .projects__card {
+        padding: 1rem;
+    }
+
+    .projects__img {
+        margin-bottom: 0.75rem;
+    }
+
+    .projects__title {
+        margin-bottom: 0.25rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .projects__container {
+        grid-template-columns: max-content;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .projects__container {
+        grid-template-columns: 1fr;
+    }
+
+    .projects__img {
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 350px) {
+    
+    .projects__item {
+        font-size: var(--small-font-size);
+    }
+
+    .projects__filters {
+        column-gap: 0.25rem;
+    }
+    
+}
