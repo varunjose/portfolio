@@ -97,15 +97,31 @@ const Qualification = () => {
               <div className='qualification__data'>
                 <div>
                   <h3 className='qualification__title'>Cognier Insights</h3>
-                  <span className='qualification__subtitle'>Software Engineer Intern</span>
+                  <span className='qualification__subtitle'>Software Engineer</span>
                   <div className='qualification__calendar'>
                     <i className='uil uil-calendar-alt'></i>
-                    Sep 2024-May 2025
+                    Jan 2023-Jun 2023
                   </div>
                 </div>
                 <div>
                   <span className='qualification__rounder'></span>
                   <span className='qualification__line'></span>
+                </div>
+              </div>
+
+              <div className='qualification__data'>
+              <div></div>
+                <div>
+                  <span className='qualification__rounder'></span>
+                  <span className='qualification__line'></span>
+                </div>
+                <div>
+                  <h3 className='qualification__title'>Cognier Insights</h3>
+                  <span className='qualification__subtitle'>Software Engineer Intern</span>
+                  <div className='qualification__calendar'>
+                    <i className='uil uil-calendar-alt'></i>
+                    Sep 2022-Dec 2022
+                  </div>
                 </div>
               </div>
 

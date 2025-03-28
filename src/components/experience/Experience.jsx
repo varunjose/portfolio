@@ -17,7 +17,7 @@ const Experience = () => {
                 <div>
                     <i className='uil uil-subway experience__icon'></i>
                     <h3 className='experience__title'>NYSDOT</h3>
-                    <p className='experience__subtitle'>Data Analyst Intern</p>
+                    <p className='experience__subtitle'>Data Analyst</p>
                 </div>
 
                 <span className='experience__button' onClick={() => toggleTab(1)}>View More 
@@ -34,23 +34,23 @@ const Experience = () => {
                         <ul className='experience__model-services grid'>
                             <li className='experience__model-service'>
                                 <i className='uil uil-check-circle experience__model-icon'></i>
-                                <p className='experience__model-info'>Enhanced and optimized skills in Full Stack Development, Data Management, focusing on both frontend and backend
-                                    technologies. </p>
+                                <p className='experience__model-info'>Optimized data management using Python for data manipulation and analysis, and SQL for precise querying, resulting
+                                    in a 70% increase in report generation efficiency. </p>
                             </li>
                             <li className='experience__model-service'>
                                 <i className='uil uil-check-circle experience__model-icon'></i>
-                                <p className='experience__model-info'>Applied SQL for precise database querying and optimized query development, integrating skills learned
-                                from academic coursework.</p>
+                                <p className='experience__model-info'>Streamlined reporting processes using Python libraries and SAP Crystal Reports, cutting report generation time by 6
+                                hours weekly and enabling faster decision-making across the pre-construction team.</p>
                             </li>
                             <li className='experience__model-service'>
                                 <i className='uil uil-check-circle experience__model-icon'></i>
-                                <p className='experience__model-info'>Utilized Tableau for effective report visualization, transforming complex data sets into clear and interactive
-                                visual representations to enhance decision-making. </p>
+                                <p className='experience__model-info'>Spearheaded the creation of interactive Tableau dashboards, connecting diverse datasets from SQL databases and
+                                Python scripts, enabling pre-construction team to cut decision-making time by 3 hours per week. </p>
                             </li>
                             <li className='experience__model-service'>
                                 <i className='uil uil-check-circle experience__model-icon'></i>
-                                <p className='experience__model-info'>Built a web application using React JS (Frontend) and Spring Boot (Backend) to visualize complex data, enhancing
-                                understanding and supporting decision-making. </p>
+                                <p className='experience__model-info'>Played a key role in resolving data integrity issues within the Project PreConstruction database, conducting thorough
+                                data analysis and validation that led to timely fixes and improved report accuracy. </p>
                             </li>
                             <li className='experience__model-service'>
                                 <i className='uil uil-check-circle experience__model-icon'></i>
