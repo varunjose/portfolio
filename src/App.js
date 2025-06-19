@@ -18,8 +18,8 @@ const App = () => {
       
       <main className='main'>
         <Home />
-        <About />
         <Projects />
+        <About />
         <Experience />
         <Skills />
         <Qualification />
