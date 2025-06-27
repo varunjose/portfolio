@@ -67,7 +67,7 @@ const Experience = () => {
                 <div>
                     <i className='uil uil-arrow experience__icon'></i>
                     <h3 className='experience__title'>Cognier Insights</h3>
-                    <p className='experience__subtitle'>Software Engineer Intern</p>
+                    <p className='experience__subtitle'>Software Engineer</p>
                 </div>
 
                 <span onClick={() => toggleTab(2)} className='experience__button'>View More 
