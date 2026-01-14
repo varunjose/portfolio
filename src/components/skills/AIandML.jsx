@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Backend = () => {
+const AIandML = () => {
   return (
     <div className='skills__content'>
-      <h3 className='skills__title'>Backend Development</h3>
+      <h3 className='skills__title'>AI & Machine Learning</h3>
 
       <div className='skills__box'>
         <div className='skills__group'>
@@ -11,7 +11,7 @@ const Backend = () => {
             <i class="bx bx-badge-check"></i>
 
             <div>
-                <h3 className='skills__name'>Node.js</h3>
+                <h3 className='skills__name'>OpenAI API</h3>
                 <span className='skills__level'>Advanced</span>
             </div>
             </div>
@@ -20,7 +20,7 @@ const Backend = () => {
             <i class="bx bx-badge-check"></i>
 
             <div>
-                <h3 className='skills__name'>Express.js</h3>
+                <h3 className='skills__name'>Claude AI</h3>
                 <span className='skills__level'>Advanced</span>
             </div>
             </div>
@@ -29,8 +29,8 @@ const Backend = () => {
             <i class="bx bx-badge-check"></i>
 
             <div>
-                <h3 className='skills__name'>FastAPI</h3>
-                <span className='skills__level'>Advanced</span>
+                <h3 className='skills__name'>Hugging Face</h3>
+                <span className='skills__level'>Intermediate</span>
             </div>
             </div>
         </div>
@@ -40,16 +40,7 @@ const Backend = () => {
             <i class="bx bx-badge-check"></i>
 
             <div>
-                <h3 className='skills__name'>Python</h3>
-                <span className='skills__level'>Advanced</span>
-            </div>
-            </div>
-
-            <div className='skills__data'>
-            <i class="bx bx-badge-check"></i>
-
-            <div>
-                <h3 className='skills__name'>Django</h3>
+                <h3 className='skills__name'>TensorFlow</h3>
                 <span className='skills__level'>Intermediate</span>
             </div>
             </div>
@@ -58,8 +49,17 @@ const Backend = () => {
             <i class="bx bx-badge-check"></i>
 
             <div>
-                <h3 className='skills__name'>RESTful APIs</h3>
+                <h3 className='skills__name'>Embeddings</h3>
                 <span className='skills__level'>Advanced</span>
+            </div>
+            </div>
+
+            <div className='skills__data'>
+            <i class="bx bx-badge-check"></i>
+
+            <div>
+                <h3 className='skills__name'>ChromaDB</h3>
+                <span className='skills__level'>Intermediate</span>
             </div>
             </div>
         </div>
@@ -69,4 +69,4 @@ const Backend = () => {
   )
 }
 
-export default Backend
+export default AIandML
