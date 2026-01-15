@@ -297,7 +297,6 @@
   .home__img {
     width: 260px;
     height: 260px;
-    box-shadow: inset 0 0 0 8px var(--glass-bg);
   }
 
   .home__social-icon {
@@ -338,7 +337,6 @@
     grid-area: image;
     width: 240px;
     height: 240px;
-    box-shadow: inset 0 0 0 7px var(--glass-bg);
     margin: 0 auto;
   }
 
