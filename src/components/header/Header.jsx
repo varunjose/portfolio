@@ -25,7 +25,7 @@ const Header = () => {
     >
       <nav className='nav container'>
         <motion.a
-          href="index.html"
+          href="#home"
           className='nav__logo'
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}

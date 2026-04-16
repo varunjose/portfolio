@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const AIandML = () => {
   return (
@@ -7,66 +7,65 @@ const AIandML = () => {
 
       <div className='skills__box'>
         <div className='skills__group'>
-            <div className='skills__data'>
-            <i class="bx bx-badge-check"></i>
+          <div className='skills__data'>
+            <i className="bx bx-badge-check"></i>
 
             <div>
-                <h3 className='skills__name'>OpenAI API</h3>
-                <span className='skills__level'>Advanced</span>
+              <h3 className='skills__name'>OpenAI APIs</h3>
+              <span className='skills__level'>Advanced</span>
             </div>
-            </div>
+          </div>
 
-            <div className='skills__data'>
-            <i class="bx bx-badge-check"></i>
-
-            <div>
-                <h3 className='skills__name'>Claude AI</h3>
-                <span className='skills__level'>Advanced</span>
-            </div>
-            </div>
-
-            <div className='skills__data'>
-            <i class="bx bx-badge-check"></i>
+          <div className='skills__data'>
+            <i className="bx bx-badge-check"></i>
 
             <div>
-                <h3 className='skills__name'>Hugging Face</h3>
-                <span className='skills__level'>Intermediate</span>
+              <h3 className='skills__name'>LangChain</h3>
+              <span className='skills__level'>Advanced</span>
             </div>
+          </div>
+
+          <div className='skills__data'>
+            <i className="bx bx-badge-check"></i>
+
+            <div>
+              <h3 className='skills__name'>LangGraph</h3>
+              <span className='skills__level'>Intermediate</span>
             </div>
+          </div>
         </div>
 
         <div className='skills__group'>
-            <div className='skills__data'>
-            <i class="bx bx-badge-check"></i>
+          <div className='skills__data'>
+            <i className="bx bx-badge-check"></i>
 
             <div>
-                <h3 className='skills__name'>TensorFlow</h3>
-                <span className='skills__level'>Intermediate</span>
+              <h3 className='skills__name'>TensorFlow</h3>
+              <span className='skills__level'>Intermediate</span>
             </div>
-            </div>
+          </div>
 
-            <div className='skills__data'>
-            <i class="bx bx-badge-check"></i>
-
-            <div>
-                <h3 className='skills__name'>Embeddings</h3>
-                <span className='skills__level'>Advanced</span>
-            </div>
-            </div>
-
-            <div className='skills__data'>
-            <i class="bx bx-badge-check"></i>
+          <div className='skills__data'>
+            <i className="bx bx-badge-check"></i>
 
             <div>
-                <h3 className='skills__name'>ChromaDB</h3>
-                <span className='skills__level'>Intermediate</span>
+              <h3 className='skills__name'>RAG Pipelines</h3>
+              <span className='skills__level'>Advanced</span>
             </div>
+          </div>
+
+          <div className='skills__data'>
+            <i className="bx bx-badge-check"></i>
+
+            <div>
+              <h3 className='skills__name'>ChromaDB / FAISS</h3>
+              <span className='skills__level'>Intermediate</span>
             </div>
+          </div>
         </div>
-
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default AIandML
+export default AIandML;

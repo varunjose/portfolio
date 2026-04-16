@@ -70,17 +70,17 @@ const About = () => {
             </motion.div>
 
             <motion.p className='about__description' variants={itemVariants}>
-              Early-career software engineer with hands-on experience building AI-powered web 
-              applications and conversion-focused features. Proven track record developing 
-              full-stack solutions with React, Node.js, Python, and FastAPI that drive user 
-              engagement and business outcomes. Skilled at rapid prototyping and shipping 
-              production code using modern development tools including Claude AI and Coderabbit 
-              for accelerated feature delivery.
+              Systems-focused software engineer with 5+ years of experience building production AI
+              platforms, backend services, and infrastructure automation. I specialize in Python,
+              Linux, observability, networking, and scalable service design, with hands-on work
+              across FastAPI, Redis, Docker, Kubernetes, GCP, and CI/CD. My recent work has
+              centered on reducing operational toil, improving system reliability, and debugging
+              performance bottlenecks in real-world AI and data systems.
             </motion.p>
 
             <motion.a
               href={CV}
-              download='Varun_Jose_Resume.pdf'
+              download='Varun_Jose_Madanu_Resume.pdf'
               className='button button--flex'
               variants={itemVariants}
               whileHover={{ scale: 1.05, y: -2 }}

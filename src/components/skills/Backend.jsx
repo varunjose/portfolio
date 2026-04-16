@@ -1,72 +1,71 @@
-import React from 'react'
+import React from 'react';
 
 const Backend = () => {
   return (
     <div className='skills__content'>
-      <h3 className='skills__title'>Backend Development</h3>
+      <h3 className='skills__title'>Systems & Infrastructure</h3>
 
       <div className='skills__box'>
         <div className='skills__group'>
-            <div className='skills__data'>
-            <i class="bx bx-badge-check"></i>
+          <div className='skills__data'>
+            <i className="bx bx-badge-check"></i>
 
             <div>
-                <h3 className='skills__name'>Node.js</h3>
-                <span className='skills__level'>Advanced</span>
+              <h3 className='skills__name'>Linux Internals</h3>
+              <span className='skills__level'>Advanced</span>
             </div>
-            </div>
+          </div>
 
-            <div className='skills__data'>
-            <i class="bx bx-badge-check"></i>
-
-            <div>
-                <h3 className='skills__name'>Express.js</h3>
-                <span className='skills__level'>Advanced</span>
-            </div>
-            </div>
-
-            <div className='skills__data'>
-            <i class="bx bx-badge-check"></i>
+          <div className='skills__data'>
+            <i className="bx bx-badge-check"></i>
 
             <div>
-                <h3 className='skills__name'>FastAPI</h3>
-                <span className='skills__level'>Advanced</span>
+              <h3 className='skills__name'>VMware vSphere</h3>
+              <span className='skills__level'>Intermediate</span>
             </div>
+          </div>
+
+          <div className='skills__data'>
+            <i className="bx bx-badge-check"></i>
+
+            <div>
+              <h3 className='skills__name'>Kubernetes</h3>
+              <span className='skills__level'>Advanced</span>
             </div>
+          </div>
         </div>
 
         <div className='skills__group'>
-            <div className='skills__data'>
-            <i class="bx bx-badge-check"></i>
+          <div className='skills__data'>
+            <i className="bx bx-badge-check"></i>
 
             <div>
-                <h3 className='skills__name'>Python</h3>
-                <span className='skills__level'>Advanced</span>
+              <h3 className='skills__name'>Docker</h3>
+              <span className='skills__level'>Advanced</span>
             </div>
-            </div>
+          </div>
 
-            <div className='skills__data'>
-            <i class="bx bx-badge-check"></i>
-
-            <div>
-                <h3 className='skills__name'>Django</h3>
-                <span className='skills__level'>Intermediate</span>
-            </div>
-            </div>
-
-            <div className='skills__data'>
-            <i class="bx bx-badge-check"></i>
+          <div className='skills__data'>
+            <i className="bx bx-badge-check"></i>
 
             <div>
-                <h3 className='skills__name'>RESTful APIs</h3>
-                <span className='skills__level'>Advanced</span>
+              <h3 className='skills__name'>Terraform</h3>
+              <span className='skills__level'>Intermediate</span>
             </div>
+          </div>
+
+          <div className='skills__data'>
+            <i className="bx bx-badge-check"></i>
+
+            <div>
+              <h3 className='skills__name'>GitHub Actions CI/CD</h3>
+              <span className='skills__level'>Advanced</span>
             </div>
+          </div>
         </div>
-
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Backend
+export default Backend;

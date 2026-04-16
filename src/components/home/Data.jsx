@@ -56,13 +56,14 @@ const Data = () => {
         </svg>
       </h1>
 
-      <h3 className='home__subtitle'>Software Engineer</h3>
+      <h3 className='home__subtitle'>Systems Engineer</h3>
       <p className='home__description'>
-        An ideal software engineer with a strong passion for full-stack development and data analysis.
+        I build automation tooling, observability systems, and resilient AI backends with Python,
+        Linux, distributed systems, and cloud infrastructure.
       </p>
 
       <a href='#contact' className='button button--flex'>
-        Let's Connect
+        Let&apos;s Connect
         <svg
           className="button__icon"
           xmlns="http://www.w3.org/2000/svg"
