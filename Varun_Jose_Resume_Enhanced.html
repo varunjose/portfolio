@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Varun Jose Madanu Resume</title>
+    <style>
+      :root {
+        --ink: #111827;
+        --muted: #475569;
+        --accent: #0f766e;
+        --line: #cbd5e1;
+        --bg: #ffffff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        color: var(--ink);
+        background: var(--bg);
+      }
+
+      .page {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 28px 40px 36px;
+      }
+
+      .header {
+        border-bottom: 2px solid var(--accent);
+        padding-bottom: 12px;
+        margin-bottom: 18px;
+      }
+
+      h1 {
+        margin: 0 0 8px;
+        font-size: 30px;
+        letter-spacing: 0.03em;
+      }
+
+      .contact {
+        font-size: 13px;
+        color: var(--muted);
+      }
+
+      .contact a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .summary {
+        font-size: 14px;
+        line-height: 1.5;
+        margin: 0 0 14px;
+      }
+
+      .section {
+        margin-top: 16px;
+      }
+
+      .section h2 {
+        margin: 0 0 8px;
+        font-size: 13px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--accent);
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        gap: 6px 14px;
+        font-size: 13px;
+        line-height: 1.45;
+      }
+
+      .label {
+        font-weight: 700;
+      }
+
+      .entry {
+        margin-bottom: 14px;
+      }
+
+      .entry-head {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        margin-bottom: 2px;
+        font-size: 14px;
+      }
+
+      .entry-role {
+        font-weight: 700;
+      }
+
+      .entry-meta {
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      ul {
+        margin: 6px 0 0 18px;
+        padding: 0;
+      }
+
+      li {
+        margin-bottom: 4px;
+        font-size: 13px;
+        line-height: 1.45;
+      }
+
+      .edu-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        font-size: 13px;
+        margin-bottom: 6px;
+      }
+
+      .edu-row strong {
+        display: block;
+        font-size: 14px;
+      }
+
+      @media print {
+        .page {
+          padding: 18px 24px 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <header class="header">
+        <h1>VARUN JOSE MADANU</h1>
+        <div class="contact">
+          <span>518-596-4160</span>
+          |
+          <a href="mailto:varunjosemadanu@gmail.com">varunjosemadanu@gmail.com</a>
+          |
+          <a href="https://www.linkedin.com/in/varun-jose-madanu/">linkedin.com/in/varun-jose-madanu</a>
+          |
+          <a href="https://github.com/varunjose">github.com/varunjose</a>
+        </div>
+      </header>
+
+      <p class="summary">
+        Systems Development Engineer with 5+ years of experience building automation tools,
+        scalable infrastructure, and observability systems for production-grade AI and data
+        platforms. Strong background in Python, Linux internals, distributed systems,
+        networking, and cloud-native deployments, with a track record of reducing toil,
+        improving reliability, and debugging performance bottlenecks at scale.
+      </p>
+
+      <section class="section">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+          <div class="label">Languages</div>
+          <div>Python, Go, TypeScript, C, C++, SQL, Bash/Shell scripting</div>
+
+          <div class="label">Systems & Infra</div>
+          <div>Linux internals, VMware vSphere, vSAN, vCenter, Kubernetes, Docker, Terraform, GCP, AWS</div>
+
+          <div class="label">Automation & SRE</div>
+          <div>CI/CD, GitHub Actions, infrastructure tooling, toil reduction, root cause analysis</div>
+
+          <div class="label">Observability</div>
+          <div>Metrics instrumentation, distributed tracing, logging pipelines, latency and throughput monitoring</div>
+
+          <div class="label">Networking</div>
+          <div>TCP/IP, UDP/RTP, BSD sockets, packet analysis, network simulation, load balancing</div>
+
+          <div class="label">Backend & Data</div>
+          <div>FastAPI, PostgreSQL, Redis, asyncio, parallel processing, ETL pipelines, MLflow</div>
+
+          <div class="label">ML / AI</div>
+          <div>TensorFlow, LangChain, LangGraph, OpenAI APIs, RAG pipelines, ChromaDB, FAISS</div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Professional Experience</h2>
+
+        <div class="entry">
+          <div class="entry-head">
+            <div>
+              <div class="entry-role">Software Engineer | Excelerate</div>
+              <div class="entry-meta">Remote, USA</div>
+            </div>
+            <div class="entry-meta">May 2024 - Dec 2025</div>
+          </div>
+          <ul>
+            <li>Designed and built automation tools for AI pipeline orchestration, reducing manual intervention across model execution, monitoring, and deployment workflows supporting 10K+ daily interactions.</li>
+            <li>Developed observability systems tracking latency, throughput, error rates, and system performance, enabling faster debugging and optimization of production AI services.</li>
+            <li>Built scalable backend services using Python and FastAPI, with asyncio-based parallel processing to improve throughput and reliability under load.</li>
+            <li>Containerized services with Docker and deployed them through GitHub Actions CI/CD, cutting ML model validation cycle time by 40% with Redis-backed caching.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-head">
+            <div>
+              <div class="entry-role">Python Developer | NYS Department of Transportation</div>
+              <div class="entry-meta">Albany, NY</div>
+            </div>
+            <div class="entry-meta">Jun 2023 - May 2024</div>
+          </div>
+          <ul>
+            <li>Built and maintained data infrastructure pipelines for 50+ large-scale construction datasets, improving fault tolerance and reducing batch processing time by 75%.</li>
+            <li>Automated ingestion, validation, and transformation workflows in Python, eliminating manual processing across 50+ stakeholder workflows.</li>
+            <li>Refactored SQL and multiprocessing workflows to cut query execution from 45 minutes to under 10 while improving ETL monitoring, anomaly detection, and data reliability.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-head">
+            <div>
+              <div class="entry-role">ML Engineer | Cognier Insights Pvt. Ltd.</div>
+              <div class="entry-meta">Hyderabad, India</div>
+            </div>
+            <div class="entry-meta">May 2020 - Mar 2022</div>
+          </div>
+          <ul>
+            <li>Built scalable ML inference systems for an e-commerce platform serving 50K+ users, improving model accuracy from 82% to 87% and cutting inference latency by 40%.</li>
+            <li>Designed automated experimentation and evaluation pipelines with MLflow, tracking 100+ runs and reducing model selection time by 60%.</li>
+            <li>Implemented Redis caching and structured production logging to improve response times, stabilize deployments, and reduce redundant computation across ML workflows.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Selected Projects</h2>
+
+        <div class="entry">
+          <div class="entry-head">
+            <div class="entry-role">Agentic Real-Time Streaming Intelligence System</div>
+            <div class="entry-meta">Python, FFmpeg, RTP/UDP, Multi-Agent Systems, RL</div>
+          </div>
+          <ul>
+            <li>Designed a real-time distributed streaming system over UDP/RTP with custom packetization, reassembly, and network simulation for low-level network experimentation.</li>
+            <li>Built observability for latency, packet loss, throughput, frame drop rate, and quality metrics, enabling measurable benchmarking and adaptive control.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-head">
+            <div class="entry-role">Multi-Client TCP Chat System</div>
+            <div class="entry-meta">C, Linux, BSD Sockets, TCP/IP</div>
+          </div>
+          <ul>
+            <li>Built a concurrent multi-client chat server in C on Linux using BSD TCP sockets and select() I/O multiplexing for simultaneous client communication.</li>
+            <li>Implemented CRC32 error detection, Hamming(7,4) correction, and a custom framing protocol for resilient message transport.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-head">
+            <div class="entry-role">OSA Prediction Real-Time Inference System</div>
+            <div class="entry-meta">TensorFlow, OpenCV, Python</div>
+          </div>
+          <ul>
+            <li>Trained a VGG-19 CNN on 2K+ facial depth maps, achieving 87% OSA prediction accuracy.</li>
+            <li>Built a desktop application with OpenCV preprocessing for real-time inference under 200ms and an end-to-end multimedia pipeline.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Education</h2>
+        <div class="edu-row">
+          <div>
+            <strong>Master of Science, Computer Science</strong>
+            University at Albany, SUNY
+          </div>
+          <div class="entry-meta">Aug 2023 - May 2025</div>
+        </div>
+        <div class="edu-row">
+          <div>
+            <strong>Bachelor of Technology, Computer Science</strong>
+            Kommuri Pratap Reddy Institute of Technology
+          </div>
+          <div class="entry-meta">Aug 2018 - May 2022</div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
