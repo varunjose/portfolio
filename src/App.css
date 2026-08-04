@@ -838,3 +838,54 @@ body {
     transform: none;
   }
 }
+
+/* Résumé-aligned content refinements */
+.hero h1 {
+  font-size: clamp(44px, 4.8vw, 74px);
+  line-height: .98;
+}
+
+.featured-projects--single {
+  grid-template-columns: 1fr;
+}
+
+.project-grid--two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.about-profile {
+  display: block;
+}
+
+.about-profile .about-story {
+  max-width: 620px;
+}
+
+.education-details {
+  max-width: 680px;
+  margin-top: 10px !important;
+  color: #484842;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.contact-direct > span {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .project-grid--two {
+    grid-template-columns: 1fr;
+  }
+
+  .about-profile .about-story {
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: clamp(38px, 11.5vw, 54px);
+  }
+}

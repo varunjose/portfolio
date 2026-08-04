@@ -13,123 +13,131 @@ const navItems = [
 const projects = [
   {
     number: '01',
-    title: 'Agentic Real-Time Streaming Intelligence',
+    title: 'Enterprise API Integration & RAG Pipeline',
     description:
-      'A distributed RTP/UDP streaming system with packetization, observability, and sub-500ms adaptive control under changing network conditions.',
-    category: 'Systems & Networking',
-    tags: ['Python', 'RTP / UDP', 'Observability'],
-    link: 'https://github.com/varunjose',
+      'A production REST API pipeline with audit logging, role-based access tiers, PII redaction, cloud-hosted SQL storage, and an operational runbook for an AI-backed enterprise workflow.',
+    category: 'AI Integration & APIs',
+    tags: ['Python', 'RAG', 'PostgreSQL', 'Docker'],
+    link: '#contact',
+    linkLabel: 'Discuss this system',
+    glyph: 'RAG',
     color: 'blue',
     featured: true,
   },
   {
     number: '02',
-    title: 'Multi-Client TCP Chat System',
+    title: 'Cloud-Based Multi-Tenant SaaS Platform',
     description:
-      'A concurrent C/Linux chat server using BSD sockets, select() multiplexing, CRC32 error detection, and Hamming(7,4) correction.',
-    category: 'Systems & Networking',
-    tags: ['C', 'Linux', 'Sockets'],
-    link: 'https://github.com/varunjose',
+      'A subscription-aware SaaS platform spanning React and Next.js dashboards, a FastAPI backend, PostgreSQL, JWT/OAuth 2.0, RBAC, and containerized CI/CD on Azure and AWS.',
+    category: 'Full-Stack & Cloud',
+    tags: ['React', 'FastAPI', 'Azure / AWS', 'CI/CD'],
+    link: '#contact',
+    linkLabel: 'Discuss this platform',
+    glyph: 'SaaS',
     color: 'yellow',
-    featured: true,
+    featured: false,
   },
   {
     number: '03',
-    title: 'OSA Prediction Inference System',
+    title: 'Predictive ML Decision-Support Application',
     description:
-      'A TensorFlow and OpenCV desktop inference pipeline delivering sub-200ms OSA predictions from facial depth maps.',
-    category: 'AI & Machine Learning',
-    tags: ['TensorFlow', 'OpenCV', 'Inference'],
-    link: 'https://github.com/varunjose',
+      'An end-to-end transportation predictive-maintenance tool with a React interface, Python services, and AWS data layers, validating model outputs against real operational outcomes.',
+    category: 'Applied Machine Learning',
+    tags: ['Python', 'SQL', 'React', 'AWS'],
+    link: '#contact',
+    linkLabel: 'Discuss this application',
+    glyph: 'ML',
     color: 'green',
-  },
-  {
-    number: '04',
-    title: 'FinanceMate',
-    description:
-      'A production full-stack finance app with cloud infrastructure and CI/CD that reduces release cycles from hours to minutes.',
-    category: 'Full-Stack & Cloud',
-    tags: ['React', 'Cloud', 'CI/CD'],
-    link: 'https://github.com/varunjose/FinanceMate',
-    color: 'red',
-  },
-  {
-    number: '05',
-    title: 'MobileRecommender',
-    description:
-      'A recommendation application built with React, backend APIs, and production-style cloud deployment patterns.',
-    category: 'Full-Stack & Cloud',
-    tags: ['React', 'APIs', 'Personalization'],
-    link: 'https://github.com/varunjose/MobileRecommender',
-    color: 'blue',
+    featured: false,
   },
 ];
 
 const experience = [
   {
-    company: 'Handshake AI',
-    role: 'AI/ML Evaluation Analyst · Contract',
-    period: 'Mar 2026 — Jul 2026',
+    company: 'Handshake',
+    role: 'AI Models Evaluation Analyst · Remote, United States',
+    period: 'Mar 2026 — Present',
     accent: 'red',
     points: [
-      'Authored multi-step software engineering evaluation tasks for frontier language models, grounded in realistic problems that current coding agents could not solve reliably end to end.',
-      'Built verifiable Python reference solutions with pinned environments, fixtures, and automated checks that produced unambiguous pass/fail signals.',
-      'Reviewed contributor tasks for clarity, correctness, difficulty calibration, and reproducibility, reducing ambiguity and downstream grading rework.',
-      'Analyzed agent transcripts and failure traces to identify recurring breakdowns in requirement interpretation, tool use, stopping behavior, and test execution.',
+      'Design and apply evaluation rubrics, scoring criteria, and structured preference data to benchmark Gemini, Claude, and GPT-4o across reasoning, code generation, debugging, and agentic workflows.',
+      'Perform trace-level analysis of multi-step agent reasoning and tool-use behavior to identify failure modes, hallucination patterns, and gaps in user-perceived quality.',
+      'Conduct side-by-side experiments and gap analyses across model versions, documenting reproducible findings and audit trails that inform prompts, evaluation criteria, and safety guardrails.',
+      'Collaborate with evaluation, data, and engineering stakeholders to translate recurring failures into benchmark refinements and training-data feedback.',
     ],
   },
   {
-    company: 'Fiserv',
-    role: 'AI/ML Engineer',
-    period: 'Sep 2024 — Feb 2026',
+    company: 'Excelerate',
+    role: 'AI Engineer · Remote',
+    period: 'May 2025 — Feb 2026',
     accent: 'blue',
     points: [
-      'Designed and shipped an agentic AI investigation system using LangGraph, LangChain, MCP servers, and RAG, increasing investigator productivity by 34%.',
-      'Built CI-gated evaluation suites, regression tests, and benchmark reporting for agent quality, latency, and cost.',
-      'Established production observability through shadow deployments, A/B testing, drift detection, and adversarial robustness evaluation, improving reliability by 27%.',
-      'Fine-tuned Llama 3.1 and Mistral 7B using LoRA, QLoRA, DPO, and Bayesian optimization, converting recent research into reusable internal tooling.',
-      'Architected AWS-native streaming and graph intelligence pipelines that reduced investigation latency by 31% and improved fraud detection accuracy by 29%.',
+      'Built cloud-based full-stack applications with React and Next.js front ends, FastAPI REST backends, and PostgreSQL and Redis data layers on Azure and AWS.',
+      'Designed REST, GraphQL, and webhook integrations with JWT/OAuth 2.0 authentication and role-based access control.',
+      'Delivered a production RAG pipeline and Claude, GPT-4o, and LangChain integrations with audit logging, PII redaction, and tiered access controls.',
+      'Provisioned infrastructure with Terraform and automated GitHub Actions CI/CD to improve environment consistency and release speed.',
     ],
   },
   {
-    company: 'S&P Global',
-    role: 'ML Engineer',
-    period: 'May 2021 — Jul 2023',
+    company: 'New York State Dept. of Transportation',
+    role: 'Python Developer · Albany, NY',
+    period: 'Jun 2024 — May 2025',
     accent: 'green',
     points: [
-      'Built distributed data infrastructure with Spark, Kafka, Airflow, and SQL to process millions of financial records with automated validation.',
-      'Developed real-time anomaly detection and risk intelligence systems, improving incident detection speed by 28%.',
-      'Trained and optimized XGBoost, LightGBM, and autoencoder models for credit risk and pricing validation, improving predictive accuracy by 32%.',
-      'Applied BERT and TF-IDF to financial news and analyst research, improving document classification efficiency by 42%.',
-      'Containerized ML services with Docker and Kubernetes for real-time inference, reducing latency by 38%.',
+      'Developed decision-support applications with Python services, SQL/PostgreSQL data layers, and React dashboards integrated with state-level enterprise systems.',
+      'Optimized SQL queries, stored procedures, and AWS data pipelines, improving query throughput by 40% with vectorized processing and partition-aware joins.',
+      'Operated AWS ECS, Lambda, and RDS infrastructure at 99.9% uptime through capacity planning, monitoring, and incident response.',
+      'Partnered with analysts, data teams, and IT leadership to scope and ship features from ambiguous, open-ended requirements.',
+    ],
+  },
+  {
+    company: 'Apollo Home Healthcare Ltd.',
+    role: 'Back-End Developer — API Engineering',
+    period: 'Mar 2022 — Jun 2023',
+    accent: 'yellow',
+    points: [
+      'Built NLP-powered document processing systems with Python and Hugging Face Transformers, reducing manual intake and claims-processing time by 60%.',
+      'Designed and tuned FastAPI services handling 50K+ records using indexing, query optimization, and caching.',
+      'Maintained REST integrations with enterprise patient-management systems for dependable healthcare workflows.',
     ],
   },
 ];
 
 const skillGroups = [
   {
-    title: 'Languages & Runtime',
+    title: 'AI/ML Evaluation',
     index: 'A',
     color: 'yellow',
-    skills: ['Python', 'Go', 'TypeScript', 'C / C++', 'SQL', 'Bash / Shell'],
+    skills: ['LLM Benchmarking', 'Evaluation Rubrics', 'Model-Based Judging', 'Preference Data', 'Agent Trace Analysis', 'Gap Analysis'],
   },
   {
-    title: 'Systems & Infrastructure',
+    title: 'Languages & Back-End',
     index: 'B',
     color: 'blue',
-    skills: ['Linux Internals', 'Kubernetes', 'Docker', 'Terraform', 'VMware vSphere', 'GitHub Actions'],
+    skills: ['Python / FastAPI / Flask', 'C# / .NET', 'RESTful APIs', 'Microservices', 'PostgreSQL / T-SQL / MySQL', 'Redis / ORM'],
   },
   {
-    title: 'AI & Machine Learning',
+    title: 'Front-End Engineering',
     index: 'C',
     color: 'green',
-    skills: ['OpenAI APIs', 'LangChain', 'LangGraph', 'TensorFlow', 'RAG Pipelines', 'ChromaDB / FAISS'],
+    skills: ['React', 'Next.js', 'TypeScript', 'JavaScript ES6+', 'HTML5 / CSS3', 'Responsive Design'],
   },
   {
-    title: 'Backend & Observability',
+    title: 'Cloud & Distributed Systems',
     index: 'D',
     color: 'red',
-    skills: ['FastAPI', 'PostgreSQL', 'Redis', 'Asyncio', 'Distributed Tracing', 'GCP / AWS'],
+    skills: ['AWS ECS / Lambda / RDS', 'AWS S3 / EC2 / VPC / IAM', 'Azure App Services', 'Azure Functions / SQL / DevOps', 'GCP / Vertex AI', 'High-Availability Services'],
+  },
+  {
+    title: 'DevOps & Tooling',
+    index: 'E',
+    color: 'blue',
+    skills: ['Docker', 'Kubernetes', 'Terraform', 'GitHub Actions CI/CD', 'Datadog', 'Structured Logging'],
+  },
+  {
+    title: 'AI Integration',
+    index: 'F',
+    color: 'green',
+    skills: ['Anthropic Claude API', 'OpenAI GPT-4o', 'Google Gemini', 'LangChain', 'RAG Pipelines', 'GraphQL / Webhooks'],
   },
 ];
 
@@ -137,12 +145,13 @@ const education = [
   {
     degree: 'Master of Science, Computer Science',
     school: 'University at Albany, SUNY',
-    period: '2023 — 2025',
+    period: 'Aug 2023 — May 2025',
+    details: 'Distributed Systems · Machine Learning · NLP · Software Engineering · Database Systems · Algorithms',
   },
   {
-    degree: 'Bachelor of Technology, Computer Science',
-    school: 'Kommuri Pratap Reddy Institute of Technology',
-    period: '2018 — 2022',
+    degree: 'Bachelor of Technology, Computer Science & Engineering',
+    school: 'JNTUH · Hyderabad, India',
+    period: 'Mar 2018 — Jun 2022',
   },
 ];
 
@@ -182,7 +191,6 @@ function App() {
       '.section-heading',
       '.project-card',
       '.about-quote',
-      '.portrait-card',
       '.about-story',
       '.fact-strip > div',
       '.experience-row',
@@ -275,19 +283,19 @@ function App() {
         <section className="hero" id="home">
           <div className="hero-copy">
             <div className="eyebrow-row">
-              <span className="eyebrow">A systems engineer&apos;s portfolio</span>
+              <span className="eyebrow">AI/ML evaluation + software engineering</span>
               <span className="issue">Issue No. 01</span>
             </div>
 
             <h1>
-              I BUILD<br />
-              <span className="highlight highlight-blue">RELIABLE</span><br />
-              AI SYSTEMS.
+              I EVALUATE<br />
+              <span className="highlight highlight-blue">FRONTIER AI</span><br />
+              &amp; BUILD SYSTEMS.
             </h1>
 
             <p className="hero-intro">
-              I am Varun Jose — a systems-focused software engineer building automation tooling,
-              observability platforms, and resilient AI backends.
+              I am Varun Jose Madanu — a software engineer with 4+ years building production systems,
+              evaluating frontier models, and shipping full-stack AI applications across Azure and AWS.
             </p>
 
             <div className="hero-actions">
@@ -304,7 +312,7 @@ function App() {
 
             <div className="social-proof">
               <div className="avatar-stack" aria-hidden="true"><span>PY</span><span>AI</span><span>☁</span></div>
-              <p><strong>4+ years</strong> turning complex infrastructure into dependable products.</p>
+              <p><strong>4+ years</strong> across AI evaluation, APIs, cloud platforms, and production software.</p>
             </div>
           </div>
 
@@ -335,22 +343,22 @@ function App() {
         <div className="ticker" aria-label="Current focus areas">
           <span className="ticker-label">● NOW BUILDING</span>
           <div className="ticker-items">
-            <span>Agentic AI systems</span>
-            <span>High-throughput APIs</span>
-            <span>Observable infrastructure</span>
-            <span>Reliable ML platforms</span>
+            <span>LLM evaluation frameworks</span>
+            <span>Agentic trace analysis</span>
+            <span>Production RAG pipelines</span>
+            <span>Cloud-native SaaS platforms</span>
           </div>
           <div className="traffic-lights" aria-hidden="true"><span /><span /><span /></div>
         </div>
 
         <section className="projects-section editorial-section" id="projects">
           <SectionHeading
-            kicker="Selected work / 01—05"
-            title="PROJECTS BUILT FOR THE REAL WORLD"
-            note="A field guide to systems, machine learning, and cloud products designed to perform beyond the demo."
+            kicker="Selected work / 01—03"
+            title="PRODUCTION SYSTEMS BEYOND THE DEMO"
+            note="Résumé-backed work across enterprise AI integration, multi-tenant SaaS, and predictive decision support."
           />
 
-          <div className="featured-projects">
+          <div className="featured-projects featured-projects--single">
             {projects.filter((project) => project.featured).map((project) => (
               <article className={`project-card project-card--featured accent-${project.color}`} key={project.number}>
                 <div className="project-visual">
@@ -358,7 +366,7 @@ function App() {
                   <div className="project-window">
                     <div className="mini-bar"><span /><span /><span /></div>
                     <div className="project-glyph" aria-hidden="true">
-                      {project.number === '01' ? '< / >' : 'TCP'}
+                      {project.glyph}
                     </div>
                     <div className="project-lines" aria-hidden="true"><span /><span /><span /></div>
                   </div>
@@ -368,13 +376,13 @@ function App() {
                   <h3>{project.title}</h3>
                   <p>{project.description}</p>
                   <div className="tag-list">{project.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>
-                  <a href={project.link} target="_blank" rel="noreferrer">View project <ArrowIcon /></a>
+                  <a href={project.link}>{project.linkLabel} <ArrowIcon /></a>
                 </div>
               </article>
             ))}
           </div>
 
-          <div className="project-grid">
+          <div className="project-grid project-grid--two">
             {projects.filter((project) => !project.featured).map((project) => (
               <article className={`project-card project-card--compact accent-${project.color}`} key={project.number}>
                 <div className="compact-topline">
@@ -385,7 +393,7 @@ function App() {
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
                 <div className="tag-list">{project.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>
-                <a href={project.link} target="_blank" rel="noreferrer">Open case study <ArrowIcon /></a>
+                <a href={project.link}>{project.linkLabel} <ArrowIcon /></a>
               </article>
             ))}
           </div>
@@ -394,49 +402,36 @@ function App() {
         <section className="about-section editorial-section" id="about">
           <div className="about-quote">
             <span className="hand-note">THE SHORT VERSION →</span>
-            <h2>I TURN MESSY TECHNICAL PROBLEMS INTO <span>CALM, RELIABLE SYSTEMS.</span></h2>
+            <h2>I MAKE FRONTIER AI <span>MEASURABLE</span> AND PRODUCTION SYSTEMS <span>DEPENDABLE.</span></h2>
             <ScribbleArrow />
           </div>
           <div className="about-profile">
-            <figure className="portrait-card">
-              <div className="portrait-frame">
-                <img
-                  src={`${process.env.PUBLIC_URL}/varun-jose-portrait.webp`}
-                  alt="Illustrated professional portrait of Varun Jose Madanu"
-                  width="768"
-                  height="768"
-                  loading="lazy"
-                />
-                <span className="portrait-spark" aria-hidden="true"><Spark /></span>
-              </div>
-              <figcaption><span>VARUN JOSE MADANU</span><span>AI/ML ENGINEER · ALBANY, NY</span></figcaption>
-            </figure>
             <div className="about-story">
               <span className="section-kicker">About / the longer version</span>
               <p>
-                AI/ML engineer with 4+ years across research engineering and production software,
-                building evaluation systems, agentic AI products, and reliable machine learning infrastructure.
+                I design evaluation rubrics, scoring frameworks, preference-data workflows, and trace-level analyses
+                that expose how frontier language models reason, use tools, and fail.
               </p>
               <p>
-                My work combines Python, model evaluation, distributed systems, observability, and cloud engineering
-                to turn ambiguous problems into measurable, production-ready systems.
+                That evaluation depth is grounded in full-stack delivery: Python and FastAPI services, React and Next.js
+                applications, SQL and NoSQL data layers, RAG pipelines, and distributed systems on Azure and AWS.
               </p>
               <a className="text-link" href="mailto:varunjosemadanu@gmail.com">Start a conversation <ArrowIcon /></a>
             </div>
           </div>
           <div className="fact-strip">
-            <div><strong>4+</strong><span>Years in AI/ML</span></div>
-            <div><strong>34%</strong><span>Investigator productivity gain</span></div>
-            <div><strong>31%</strong><span>Lower investigation latency</span></div>
-            <div><strong>29%</strong><span>Higher detection accuracy</span></div>
+            <div><strong>4+</strong><span>Years building production systems</span></div>
+            <div><strong>40%</strong><span>Higher query throughput</span></div>
+            <div><strong>99.9%</strong><span>Production uptime</span></div>
+            <div><strong>60%</strong><span>Less manual processing</span></div>
           </div>
         </section>
 
         <section className="experience-section editorial-section" id="experience">
           <SectionHeading
-            kicker="Professional log / 2021—2026"
+            kicker="Professional log / 2022—Present"
             title="EXPERIENCE IN THE FIELD"
-            note="Open each dispatch for a closer look at the systems, performance gains, and engineering decisions behind the role."
+            note="Open each role for résumé-aligned details spanning frontier-model evaluation, AI engineering, cloud applications, and API systems."
           />
           <div className="experience-list">
             {experience.map((job, index) => (
@@ -458,9 +453,9 @@ function App() {
 
         <section className="skills-section editorial-section" id="skills">
           <SectionHeading
-            kicker="Toolbox / organized by use"
-            title="A PRACTICAL TECH STACK"
-            note="The languages, platforms, and infrastructure I use to move from an idea to a dependable production system."
+            kicker="Toolbox / résumé aligned"
+            title="EVALUATION DEPTH, FULL-STACK RANGE"
+            note="The evaluation methods, languages, platforms, integrations, and infrastructure I use across the AI product lifecycle."
           />
           <div className="skills-grid">
             {skillGroups.map((group) => (
@@ -471,7 +466,7 @@ function App() {
             ))}
           </div>
           <div className="skill-marquee" aria-hidden="true">
-            <span>PYTHON</span><i>✦</i><span>FASTAPI</span><i>✦</i><span>KUBERNETES</span><i>✦</i><span>AI SYSTEMS</span><i>✦</i><span>LINUX</span>
+            <span>LLM EVALUATION</span><i>✦</i><span>PYTHON</span><i>✦</i><span>FASTAPI</span><i>✦</i><span>REACT</span><i>✦</i><span>CLOUD SYSTEMS</span>
           </div>
         </section>
 
@@ -485,7 +480,11 @@ function App() {
             {education.map((item, index) => (
               <article key={item.degree}>
                 <span className="education-number">0{index + 1}</span>
-                <div><h3>{item.degree}</h3><p>{item.school}</p></div>
+                <div>
+                  <h3>{item.degree}</h3>
+                  <p>{item.school}</p>
+                  {item.details && <p className="education-details">{item.details}</p>}
+                </div>
                 <span className="education-period">{item.period}</span>
               </article>
             ))}
@@ -496,11 +495,12 @@ function App() {
           <div className="contact-copy">
             <span className="section-kicker">Contact / say hello</span>
             <h2>HAVE A HARD<br />PROBLEM? <span>LET&apos;S<br />BUILD.</span></h2>
-            <p>I am always interested in ambitious engineering work, thoughtful teams, and systems that need to scale reliably.</p>
+            <p>I am open to ambitious AI evaluation and software engineering work with thoughtful teams building systems that must perform reliably.</p>
             <div className="contact-direct">
               <a href="mailto:varunjosemadanu@gmail.com">varunjosemadanu@gmail.com</a>
               <a href="tel:+15185964160">+1 (518) 596-4160</a>
               <a href="https://www.linkedin.com/in/varun-jose-madanu/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+              <span>Albany, NY · Open to relocate</span>
             </div>
             <ScribbleArrow className="contact-arrow" />
           </div>
@@ -526,7 +526,7 @@ function App() {
 
       <footer className="site-footer">
         <a className="wordmark wordmark--footer" href="#home"><span className="wordmark-mark" aria-hidden="true"><span /><span /></span><span>VARUN<br />JOSE</span></a>
-        <p>Systems engineering, AI platforms, and reliable software.</p>
+        <p>Frontier AI evaluation, full-stack systems, and reliable software.</p>
         <div className="footer-links">
           <a href="https://github.com/varunjose" target="_blank" rel="noreferrer">GitHub ↗</a>
           <a href="https://www.linkedin.com/in/varun-jose-madanu/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
