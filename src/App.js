@@ -246,7 +246,7 @@ function App() {
               <a className="brutal-button brutal-button--blue" href="#projects">Explore my work <ArrowIcon /></a>
               <a
                 className="brutal-button brutal-button--paper"
-                href={`${process.env.PUBLIC_URL}/Varun_Jose_Resume_Enhanced.html`}
+                href={`${process.env.PUBLIC_URL}/Varun_Jose_Madanu_AI_Evaluation.pdf`}
                 target="_blank"
                 rel="noreferrer"
               >
