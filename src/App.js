@@ -67,37 +67,41 @@ const projects = [
 
 const experience = [
   {
-    company: 'Excelerate',
-    role: 'Software Engineer',
-    period: 'May 2024 — Dec 2025',
+    company: 'Handshake AI',
+    role: 'AI/ML Evaluation Analyst · Contract',
+    period: 'Mar 2026 — Jul 2026',
     accent: 'red',
     points: [
-      'Designed automation tools for AI pipeline orchestration supporting 10K+ daily interactions.',
-      'Built observability systems for latency, throughput, error rates, and service health.',
-      'Developed scalable Python and FastAPI services with asyncio-based parallel processing.',
-      'Reduced ML validation cycle time by 40% with Redis caching, Docker, and repeatable CI/CD.',
+      'Authored multi-step software engineering evaluation tasks for frontier language models, grounded in realistic problems that current coding agents could not solve reliably end to end.',
+      'Built verifiable Python reference solutions with pinned environments, fixtures, and automated checks that produced unambiguous pass/fail signals.',
+      'Reviewed contributor tasks for clarity, correctness, difficulty calibration, and reproducibility, reducing ambiguity and downstream grading rework.',
+      'Analyzed agent transcripts and failure traces to identify recurring breakdowns in requirement interpretation, tool use, stopping behavior, and test execution.',
     ],
   },
   {
-    company: 'NYSDOT',
-    role: 'Python Developer',
-    period: 'Jun 2023 — May 2024',
+    company: 'Fiserv',
+    role: 'AI/ML Engineer',
+    period: 'Sep 2024 — Feb 2026',
     accent: 'blue',
     points: [
-      'Built data infrastructure pipelines for 50+ large-scale construction datasets.',
-      'Automated ingestion, validation, and transformation across 50+ stakeholder workflows.',
-      'Cut SQL and multiprocessing workflow execution from 45 minutes to under 10 minutes.',
+      'Designed and shipped an agentic AI investigation system using LangGraph, LangChain, MCP servers, and RAG, increasing investigator productivity by 34%.',
+      'Built CI-gated evaluation suites, regression tests, and benchmark reporting for agent quality, latency, and cost.',
+      'Established production observability through shadow deployments, A/B testing, drift detection, and adversarial robustness evaluation, improving reliability by 27%.',
+      'Fine-tuned Llama 3.1 and Mistral 7B using LoRA, QLoRA, DPO, and Bayesian optimization, converting recent research into reusable internal tooling.',
+      'Architected AWS-native streaming and graph intelligence pipelines that reduced investigation latency by 31% and improved fraud detection accuracy by 29%.',
     ],
   },
   {
-    company: 'Cognier Insights',
+    company: 'S&P Global',
     role: 'ML Engineer',
-    period: 'May 2020 — Mar 2022',
+    period: 'May 2021 — Jul 2023',
     accent: 'green',
     points: [
-      'Built scalable ML inference systems for an e-commerce platform serving 50K+ users.',
-      'Improved model accuracy from 82% to 87% while cutting inference latency by 40%.',
-      'Tracked 100+ MLflow runs and reduced model selection time by 60%.',
+      'Built distributed data infrastructure with Spark, Kafka, Airflow, and SQL to process millions of financial records with automated validation.',
+      'Developed real-time anomaly detection and risk intelligence systems, improving incident detection speed by 28%.',
+      'Trained and optimized XGBoost, LightGBM, and autoencoder models for credit risk and pricing validation, improving predictive accuracy by 32%.',
+      'Applied BERT and TF-IDF to financial news and analyst research, improving document classification efficiency by 42%.',
+      'Containerized ML services with Docker and Kubernetes for real-time inference, reducing latency by 38%.',
     ],
   },
 ];
@@ -178,6 +182,7 @@ function App() {
       '.section-heading',
       '.project-card',
       '.about-quote',
+      '.portrait-card',
       '.about-story',
       '.fact-strip > div',
       '.experience-row',
@@ -299,7 +304,7 @@ function App() {
 
             <div className="social-proof">
               <div className="avatar-stack" aria-hidden="true"><span>PY</span><span>AI</span><span>☁</span></div>
-              <p><strong>5+ years</strong> turning complex infrastructure into dependable products.</p>
+              <p><strong>4+ years</strong> turning complex infrastructure into dependable products.</p>
             </div>
           </div>
 
@@ -392,30 +397,44 @@ function App() {
             <h2>I TURN MESSY TECHNICAL PROBLEMS INTO <span>CALM, RELIABLE SYSTEMS.</span></h2>
             <ScribbleArrow />
           </div>
-          <div className="about-story">
-            <span className="section-kicker">About / the longer version</span>
-            <p>
-              Systems-focused software engineer with 5+ years of experience building production AI
-              platforms, backend services, and infrastructure automation. I specialize in Python,
-              Linux, observability, networking, and scalable service design.
-            </p>
-            <p>
-              My recent work centers on reducing operational toil, improving system reliability,
-              and debugging performance bottlenecks across FastAPI, Redis, Docker, Kubernetes, and cloud infrastructure.
-            </p>
-            <a className="text-link" href="mailto:varunjosemadanu@gmail.com">Start a conversation <ArrowIcon /></a>
+          <div className="about-profile">
+            <figure className="portrait-card">
+              <div className="portrait-frame">
+                <img
+                  src={`${process.env.PUBLIC_URL}/varun-jose-portrait.webp`}
+                  alt="Illustrated professional portrait of Varun Jose Madanu"
+                  width="768"
+                  height="768"
+                  loading="lazy"
+                />
+                <span className="portrait-spark" aria-hidden="true"><Spark /></span>
+              </div>
+              <figcaption><span>VARUN JOSE MADANU</span><span>AI/ML ENGINEER · ALBANY, NY</span></figcaption>
+            </figure>
+            <div className="about-story">
+              <span className="section-kicker">About / the longer version</span>
+              <p>
+                AI/ML engineer with 4+ years across research engineering and production software,
+                building evaluation systems, agentic AI products, and reliable machine learning infrastructure.
+              </p>
+              <p>
+                My work combines Python, model evaluation, distributed systems, observability, and cloud engineering
+                to turn ambiguous problems into measurable, production-ready systems.
+              </p>
+              <a className="text-link" href="mailto:varunjosemadanu@gmail.com">Start a conversation <ArrowIcon /></a>
+            </div>
           </div>
           <div className="fact-strip">
-            <div><strong>5+</strong><span>Years building</span></div>
-            <div><strong>10K+</strong><span>Daily interactions supported</span></div>
-            <div><strong>40%</strong><span>Faster validation cycles</span></div>
-            <div><strong>50+</strong><span>Data workflows automated</span></div>
+            <div><strong>4+</strong><span>Years in AI/ML</span></div>
+            <div><strong>34%</strong><span>Investigator productivity gain</span></div>
+            <div><strong>31%</strong><span>Lower investigation latency</span></div>
+            <div><strong>29%</strong><span>Higher detection accuracy</span></div>
           </div>
         </section>
 
         <section className="experience-section editorial-section" id="experience">
           <SectionHeading
-            kicker="Professional log / 2020—2025"
+            kicker="Professional log / 2021—2026"
             title="EXPERIENCE IN THE FIELD"
             note="Open each dispatch for a closer look at the systems, performance gains, and engineering decisions behind the role."
           />
