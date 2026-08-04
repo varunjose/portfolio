@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import './App.css';
 
@@ -172,6 +172,49 @@ const SectionHeading = ({ kicker, title, note }) => (
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [formState, setFormState] = useState('idle');
+
+  useEffect(() => {
+    const selectors = [
+      '.section-heading',
+      '.project-card',
+      '.about-quote',
+      '.about-story',
+      '.fact-strip > div',
+      '.experience-row',
+      '.skill-card',
+      '.education-intro',
+      '.education-list article',
+      '.contact-copy',
+      '.contact-form',
+    ];
+    const elements = document.querySelectorAll(selectors.join(','));
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    elements.forEach((element, index) => {
+      element.classList.add('motion-reveal');
+      element.style.setProperty('--reveal-delay', `${(index % 4) * 75}ms`);
+    });
+
+    if (reduceMotion || !('IntersectionObserver' in window)) {
+      elements.forEach((element) => element.classList.add('is-visible'));
+      return undefined;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: '0px 0px -55px' }
+    );
+
+    elements.forEach((element) => observer.observe(element));
+    return () => observer.disconnect();
+  }, []);
 
   const closeMenu = () => setMenuOpen(false);
 
