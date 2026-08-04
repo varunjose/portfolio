@@ -401,10 +401,10 @@ function App() {
             <figure className="portrait-card">
               <div className="portrait-frame">
                 <img
-                  src={`${process.env.PUBLIC_URL}/varun-jose-portrait.png`}
+                  src={`${process.env.PUBLIC_URL}/varun-jose-portrait.webp`}
                   alt="Illustrated professional portrait of Varun Jose Madanu"
-                  width="1254"
-                  height="1254"
+                  width="768"
+                  height="768"
                   loading="lazy"
                 />
                 <span className="portrait-spark" aria-hidden="true"><Spark /></span>
