@@ -492,7 +492,7 @@ function App() {
             <div className="contact-direct">
               <a href="mailto:varunjosemadanu@gmail.com">varunjosemadanu@gmail.com</a>
               <a href="tel:+15185964160">+1 (518) 596-4160</a>
-              <a href="https://www.linkedin.com/in/varun-jose-madanu/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+              <a href="https://www.linkedin.com/in/varun-jose-madan/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
               <span>Albany, NY · Open to relocate</span>
             </div>
             <ScribbleArrow className="contact-arrow" />
@@ -522,7 +522,7 @@ function App() {
         <p>AI/ML systems engineered from signal to decision to product.</p>
         <div className="footer-links">
           <a href="https://github.com/varunjose" target="_blank" rel="noreferrer">GitHub ↗</a>
-          <a href="https://www.linkedin.com/in/varun-jose-madanu/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          <a href="https://www.linkedin.com/in/varun-jose-madan/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
           <a href="#home">Back to top ↑</a>
         </div>
         <span>© {new Date().getFullYear()} Varun Jose Madanu</span>
