@@ -32,7 +32,7 @@ const Footer = () => {
         </ul>
 
         <div className='footer__social'>
-          <a href='https://www.linkedin.com/in/varun-jose-madanu/' className='footer__social-link' target='_blank' rel='noreferrer'>
+          <a href='https://www.linkedin.com/in/varun-jose-madan/' className='footer__social-link' target='_blank' rel='noreferrer'>
             <i className='bx bxl-linkedin'></i>
           </a>
           <a href='https://github.com/varunjose' className='footer__social-link' target='_blank' rel='noreferrer'>
