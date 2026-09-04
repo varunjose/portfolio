@@ -4,8 +4,8 @@ import './App.css';
 
 const navItems = [
   ['Work', '#projects'],
-  ['How I Build', '#story'],
-  ['Systems Stack', '#skills'],
+  ['What I Deliver', '#story'],
+  ['Capabilities', '#skills'],
   ['Education', '#education'],
   ['Contact', '#contact'],
 ];
@@ -13,99 +13,99 @@ const navItems = [
 const projects = [
   {
     number: '01',
-    title: 'Agentic Real-Time Streaming System',
+    title: 'Realtime Voice-Agent Test Harness',
     description:
-      'A C++ live-video system that fragments and reassembles H.264 frames over UDP, measures latency, loss, jitter, and QoE, then adapts bitrate, FPS, GOP, and resolution through fixed, rule-based, RL, and agentic-hybrid controllers.',
-    category: 'Flagship · Agentic Systems & Networking',
-    tags: ['C++', 'UDP / RTP', 'OpenCV', 'H.264', 'RL Control'],
-    link: 'https://github.com/varunjose/Agentic-Real-Time-Streaming-System-RL-',
-    linkLabel: 'Explore the flagship repository',
-    glyph: 'RL',
-    signal: 'Feedback loop: network telemetry → QoE score → bounded encoder action.',
+      'An outbound patient simulator that calls a medical-office AI, stays in one of 12 test personas, handles natural turn-taking and interruptions, and saves recordings, two-sided transcripts, events, metadata, and structured evaluations.',
+    category: 'Flagship · Voice AI, Agents & Evaluation',
+    tags: ['Python', 'FastAPI', 'OpenAI Realtime', 'Twilio', 'WebSockets'],
+    link: 'https://github.com/varunjose/PGAI-Assignment',
+    linkLabel: 'Inspect the working voice-agent system',
+    glyph: 'AI',
+    signal: 'Production loop: scenario → live call → evidence bundle → automated evaluation.',
     color: 'blue',
     featured: true,
   },
   {
     number: '02',
-    title: 'Sleep Apnea Prediction from Facial Depth Maps',
+    title: 'JobSignal — U.S. Jobs Aggregator',
     description:
-      'A medical-imaging research pipeline using VGG-19 transfer learning and custom CNN layers to classify facial depth maps, with repeatable preprocessing, saved model artifacts, and an interactive prediction workflow.',
-    category: 'Computer Vision & Deep Learning',
-    tags: ['Python', 'TensorFlow', 'VGG-19', 'OpenCV'],
-    link: 'https://github.com/varunjose/SleepApneaPrediction',
-    linkLabel: 'View the computer-vision work',
-    glyph: 'CV',
-    signal: 'Research-only screening workflow built around non-invasive visual features.',
+      'A deployable service that collects fresh U.S. roles from public feeds and direct ATS connectors, normalizes them into one schema, preserves source provenance, deduplicates results, and scores profile fit.',
+    category: 'Data Product, APIs & Automation',
+    tags: ['Python', 'FastAPI', 'PostgreSQL', 'Docker', 'GitHub Actions'],
+    link: 'https://github.com/varunjose/JobsAggregator',
+    linkLabel: 'Explore the ingestion and API architecture',
+    glyph: 'API',
+    signal: 'Automated pipeline: ingest → normalize → deduplicate → rank → serve every two hours.',
     color: 'green',
     featured: false,
   },
   {
     number: '03',
-    title: 'Semantic Book Recommender',
+    title: 'Agentic Real-Time Streaming System',
     description:
-      'An NLP recommendation pipeline that retrieves books by semantic meaning and adds emotion-aware filtering, turning unstructured descriptions into more personal and explainable suggestions.',
-    category: 'NLP, Embeddings & Retrieval',
-    tags: ['Python', 'NLP', 'Vector Search', 'Embeddings'],
-    link: 'https://github.com/varunjose/SemanticBookRecommender',
-    linkLabel: 'Inspect the retrieval pipeline',
-    glyph: 'NLP',
-    signal: 'Representation layer: text → embeddings → similarity ranking → emotion filter.',
+      'A C++ live-video system that fragments and reassembles H.264 frames over UDP, observes latency, loss, jitter, and quality, then adapts the encoder using fixed, rule-based, learned, and hybrid controllers.',
+    category: 'Agentic Control & Systems Engineering',
+    tags: ['C++', 'UDP / RTP', 'OpenCV', 'H.264', 'RL Control'],
+    link: 'https://github.com/varunjose/Agentic-Real-Time-Streaming-System-RL-',
+    linkLabel: 'Review the adaptive control loop',
+    glyph: 'RL',
+    signal: 'Feedback loop: network telemetry → QoE score → bounded encoder action.',
     color: 'yellow',
     featured: false,
   },
   {
     number: '04',
-    title: 'Multi-Client Chat with Error Detection & Correction',
+    title: 'Semantic Book Recommender',
     description:
-      'A concurrent C/Linux chat system with public and private messaging, select()-based I/O multiplexing, connection history, CRC32 error detection, and Hamming-code correction.',
+      'An NLP retrieval pipeline that represents book descriptions as embeddings, ranks them by semantic similarity, and adds emotion-aware filtering to produce more useful and explainable recommendations.',
+    category: 'NLP, Embeddings & Retrieval',
+    tags: ['Python', 'NLP', 'Vector Search', 'Embeddings'],
+    link: 'https://github.com/varunjose/SemanticBookRecommender',
+    linkLabel: 'Inspect the retrieval pipeline',
+    glyph: 'NLP',
+    signal: 'Retrieval loop: text → embeddings → similarity ranking → emotion filter.',
+    color: 'red',
+    featured: false,
+  },
+  {
+    number: '05',
+    title: 'Sleep Apnea Screening Research',
+    description:
+      'A computer-vision research prototype using VGG-19 transfer learning and custom CNN layers to explore non-invasive screening from facial depth maps, with preprocessing, model persistence, and interactive inference.',
+    category: 'Computer Vision & Deep Learning',
+    tags: ['Python', 'TensorFlow', 'VGG-19', 'OpenCV'],
+    link: 'https://github.com/varunjose/SleepApneaPrediction',
+    linkLabel: 'View the computer-vision workflow',
+    glyph: 'CV',
+    signal: 'ML lifecycle: prepare data → train → persist → run an interactive prediction.',
+    color: 'blue',
+    featured: false,
+  },
+  {
+    number: '06',
+    title: 'Reliable Multi-Client Chat',
+    description:
+      'A concurrent C/Linux chat server with public and private messaging, select()-based I/O multiplexing, persistent history, CRC32 error detection, and Hamming-code correction.',
     category: 'Reliable Network Software',
     tags: ['C', 'Linux', 'TCP Sockets', 'CRC32', 'Hamming'],
     link: 'https://github.com/varunjose/Multi-Client-Chat-System-with-Error-Detection-Correction',
     linkLabel: 'Review the network implementation',
     glyph: 'TCP',
     signal: 'Reliability layer: concurrent clients + integrity checks + recoverable transmission errors.',
-    color: 'red',
-    featured: false,
-  },
-  {
-    number: '05',
-    title: 'Mobile Recommender',
-    description:
-      'A JavaScript product experience for exploring mobile phones by specifications and visited items, demonstrating how recommendation logic becomes a clear, decision-oriented user flow.',
-    category: 'Recommendation Product',
-    tags: ['JavaScript', 'Product UI', 'Personalization'],
-    link: 'https://github.com/varunjose/MobileRecommender',
-    linkLabel: 'Open the product repository',
-    glyph: 'REC',
-    signal: 'Product layer: browsing context + specifications → guided device discovery.',
-    color: 'blue',
-    featured: false,
-  },
-  {
-    number: '06',
-    title: 'FinanceMate',
-    description:
-      'A personal-finance dashboard with transaction workflows, form validation, date controls, API integration, and Chart.js visualizations built with React and Material UI.',
-    category: 'Full-Stack Data Product',
-    tags: ['React', 'Material UI', 'Chart.js', 'Axios'],
-    link: 'https://github.com/varunjose/FinanceMate',
-    linkLabel: 'View the finance product',
-    glyph: 'FIN',
-    signal: 'Decision layer: financial records → validated workflows → readable visual summaries.',
     color: 'green',
     featured: false,
   },
   {
     number: '07',
-    title: 'Portfolio — The System You Are Using',
+    title: 'Looop Product Experience',
     description:
-      'A responsive React portfolio designed as an engineering narrative, with accessible navigation, reduced-motion support, project-led storytelling, and a GitHub Pages delivery path.',
-    category: 'Developer Experience & Storytelling',
-    tags: ['React', 'CSS', 'Accessibility', 'GitHub Pages'],
-    link: 'https://github.com/varunjose/portfolio',
-    linkLabel: 'See how this portfolio is built',
+      'A responsive product site for an AI app builder, translating a generate, verify, and repair loop into a focused product narrative, native interface visuals, and an automated GitHub Pages delivery path.',
+    category: 'AI Product UI & Frontend Delivery',
+    tags: ['JavaScript', 'HTML / CSS', 'Product UX', 'GitHub Pages'],
+    link: 'https://github.com/varunjose/Looop',
+    linkLabel: 'See the product implementation',
     glyph: 'WEB',
-    signal: 'Communication layer: technical depth → scannable evidence → a clear hiring story.',
+    signal: 'Product layer: technical workflow → clear value story → responsive interface.',
     color: 'yellow',
     featured: false,
   },
@@ -113,54 +113,54 @@ const projects = [
 
 const skillGroups = [
   {
-    title: 'Models & Representation',
+    title: 'Generative AI & Agents',
     index: 'A',
     color: 'yellow',
-    skills: ['TensorFlow / PyTorch', 'Transfer Learning', 'CNNs', 'Embeddings', 'Vector Search', 'Recommender Systems'],
+    skills: ['LLM Applications', 'Agent Workflows', 'RAG', 'Prompt Design', 'Tool Calling', 'Realtime Voice AI'],
   },
   {
-    title: 'Agentic Decision Systems',
+    title: 'Retrieval & Evaluation',
     index: 'B',
     color: 'blue',
-    skills: ['RL Policy Control', 'Agentic Hybrid Control', 'QoE Optimization', 'Safety Overrides', 'Evaluation Loops', 'Experimentation'],
+    skills: ['Embeddings', 'Vector Search', 'Grounding', 'Structured Evaluation', 'Guardrails', 'Regression Testing'],
   },
   {
-    title: 'Systems & Networking',
+    title: 'Python & Backend',
     index: 'C',
     color: 'green',
-    skills: ['C / C++', 'UDP / RTP', 'TCP Sockets', 'Linux I/O', 'H.264', 'CRC32 / Hamming'],
+    skills: ['Python', 'FastAPI', 'AsyncIO', 'REST APIs', 'WebSockets', 'Background Jobs'],
   },
   {
-    title: 'ML & Data Engineering',
+    title: 'ML & Data Systems',
     index: 'D',
     color: 'red',
-    skills: ['Python', 'Data Preprocessing', 'Model Training', 'Inference Pipelines', 'SQL', 'FastAPI / REST'],
+    skills: ['PyTorch / TensorFlow', 'ML Pipelines', 'PostgreSQL', 'SQL', 'Data Validation', 'Model Inference'],
   },
   {
     title: 'Product Engineering',
     index: 'E',
     color: 'blue',
-    skills: ['React', 'JavaScript', 'Material UI', 'Chart.js', 'Responsive UI', 'Accessible Navigation'],
+    skills: ['React', 'JavaScript / TypeScript', 'Product UX', 'Responsive UI', 'API Integration', 'Accessible Interfaces'],
   },
   {
     title: 'Reliability & Delivery',
     index: 'F',
     color: 'green',
-    skills: ['Latency / Drop Metrics', 'Observability', 'Docker', 'CI/CD', 'GitHub Actions', 'Reproducible Builds'],
+    skills: ['AWS / GCP', 'Docker / Kubernetes', 'Observability', 'CI/CD', 'GitHub Actions', 'Latency & Cost Tuning'],
   },
 ];
 
 const education = [
   {
     degree: 'Master of Science, Computer Science',
-    school: 'University at Albany, SUNY',
+    school: 'New Jersey Institute of Technology',
     period: 'Aug 2023 — May 2025',
     details: 'Distributed Systems · Machine Learning · NLP · Software Engineering · Database Systems · Algorithms',
   },
   {
     degree: 'Bachelor of Technology, Computer Science & Engineering',
-    school: 'JNTUH · Hyderabad, India',
-    period: 'Mar 2018 — Jun 2022',
+    school: 'Kommuri Pratap Reddy Institute of Technology · Hyderabad, India',
+    period: '2019 — 2023',
   },
 ];
 
@@ -292,19 +292,20 @@ function App() {
         <section className="hero" id="home">
           <div className="hero-copy">
             <div className="eyebrow-row">
-              <span className="eyebrow">AI/ML systems engineering · selected work</span>
-              <span className="issue">Worklog No. 01</span>
+              <span className="eyebrow">AI/ML & software engineering · selected work</span>
+              <span className="issue">Build log / 2026</span>
             </div>
 
             <h1>
-              I TURN MODELS<br />
-              INTO <span className="highlight highlight-blue">WORKING</span><br />
-              SYSTEMS.
+              I BUILD AI<br />
+              THAT <span className="highlight highlight-blue">WORKS</span><br />
+              IN PRODUCTION.
             </h1>
 
             <p className="hero-intro">
-              I am Varun Jose Madanu — an AI/ML Systems Engineer who works across the full path from
-              signal and data to model decisions, reliable runtimes, measurable behavior, and usable products.
+              I am Varun Jose Madanu. I design and ship LLM agents, retrieval systems, realtime voice
+              workflows, Python APIs, and full-stack AI products — from prototype and evaluation to deployment,
+              observability, and improvement.
             </p>
 
             <div className="hero-actions">
@@ -320,8 +321,8 @@ function App() {
             </div>
 
             <div className="social-proof">
-              <div className="avatar-stack" aria-hidden="true"><span>ML</span><span>SYS</span><span>UX</span></div>
-              <p><strong>7 public repositories</strong> spanning agentic control, computer vision, semantic retrieval, networking, and product engineering.</p>
+              <div className="avatar-stack" aria-hidden="true"><span>AI</span><span>API</span><span>OPS</span></div>
+              <p><strong>Working proof, not just keywords:</strong> live voice automation, scheduled data pipelines, adaptive systems, ML inference, and shipped product interfaces.</p>
             </div>
           </div>
 
@@ -343,7 +344,7 @@ function App() {
                 <div className="steps-pane"><span /><span /><span /><span /></div>
               </div>
             </div>
-            <div className="hero-sticker"><Spark /><span>MODELS THAT<br />LEARN<br />SYSTEMS THAT WORK</span></div>
+            <div className="hero-sticker"><Spark /><span>BUILD<br />MEASURE<br />IMPROVE</span></div>
             <ScribbleArrow className="hero-arrow" />
             <span className="doodle-x" aria-hidden="true">×</span>
           </div>
@@ -352,10 +353,10 @@ function App() {
         <div className="ticker" aria-label="Current focus areas">
           <span className="ticker-label">● NOW BUILDING</span>
           <div className="ticker-items">
-            <span>Adaptive streaming control</span>
-            <span>Deep-learning inference</span>
-            <span>Semantic retrieval</span>
-            <span>Reliable network software</span>
+            <span>LLM agents & RAG</span>
+            <span>Realtime voice AI</span>
+            <span>Python backend systems</span>
+            <span>Evaluation & observability</span>
           </div>
           <div className="traffic-lights" aria-hidden="true"><span /><span /><span /></div>
         </div>
@@ -363,8 +364,8 @@ function App() {
         <section className="projects-section editorial-section" id="projects">
           <SectionHeading
             kicker="Selected work / 01—07"
-            title="FROM SIGNALS TO DECISIONS TO PRODUCTS"
-            note="Each repository shows one part of how I engineer AI/ML systems: capture the input, build the decision path, measure its behavior, and ship an interface people can use."
+            title="PROOF OF WHAT I CAN BUILD"
+            note="These repositories show complete engineering decisions: the problem, architecture, implementation, tradeoffs, tests, evidence, and path to deployment."
           />
 
           <div className="featured-projects featured-projects--single">
@@ -412,43 +413,44 @@ function App() {
 
         <section className="about-section editorial-section" id="story">
           <div className="about-quote">
-            <span className="hand-note">THE ENGINEERING THREAD →</span>
-            <h2>I START WITH <span>SIGNALS</span>, BUILD THE DECISION LOOP, AND SHIP THE <span>INTERFACE.</span></h2>
+            <span className="hand-note">WHAT I DELIVER →</span>
+            <h2>I TAKE AN <span>AMBIGUOUS PROBLEM</span> TO A MEASURABLE, RELIABLE <span>PRODUCT.</span></h2>
             <ScribbleArrow />
           </div>
           <div className="about-profile">
             <div className="about-story">
-              <span className="section-kicker">How I build / one connected system</span>
+              <span className="section-kicker">What I do / where I contribute</span>
               <p>
-                My strongest work sits where AI meets systems engineering. I instrument the real-world inputs — frames,
-                packets, images, text, and user behavior — then design the model or control loop that turns them into a decision.
+                My strongest contribution is connecting AI capability to dependable software. I can design an LLM or
+                retrieval workflow, build the Python service around it, integrate data and external APIs, and add the
+                evaluation, guardrails, logging, and deployment work required to operate it responsibly.
               </p>
               <p>
-                The agentic streaming project makes that approach visible end to end: transport telemetry becomes a QoE score,
-                the controller selects a bounded action, and the encoder adapts while the stream stays observable. The same pattern
-                carries into computer vision, semantic retrieval, recommendation products, and reliable network software.
+                I have worked across AI/ML evaluation, backend engineering, automation, data workflows, and systems
+                troubleshooting. My public projects make the implementation visible; professional work is described through
+                responsibilities and outcomes without exposing confidential code, customer data, or internal architecture.
               </p>
               <a className="text-link" href="https://github.com/varunjose" target="_blank" rel="noreferrer">Follow the work on GitHub <ArrowIcon /></a>
             </div>
-            <div className="story-steps" aria-label="Varun's engineering approach">
-              <article className="story-step"><span>01</span><h3>Observe</h3><p>Make the input and constraints measurable: quality, latency, loss, confidence, relevance, and user intent.</p></article>
-              <article className="story-step"><span>02</span><h3>Decide</h3><p>Use models, retrieval, rules, or learned policies — then put guardrails and evaluation around the decision.</p></article>
-              <article className="story-step"><span>03</span><h3>Deliver</h3><p>Connect the intelligence to a reliable runtime and a product surface that makes the result useful.</p></article>
+            <div className="story-steps" aria-label="Ways Varun contributes to an engineering team">
+              <article className="story-step"><span>01</span><h3>Build the intelligence</h3><p>LLM agents, RAG and semantic retrieval, voice workflows, ML inference, prompt and tool orchestration, and structured evaluation.</p></article>
+              <article className="story-step"><span>02</span><h3>Engineer the system</h3><p>Async Python APIs, databases, data pipelines, integrations, Docker, cloud delivery, CI/CD, monitoring, and failure handling.</p></article>
+              <article className="story-step"><span>03</span><h3>Improve the outcome</h3><p>Turn telemetry and user feedback into better accuracy, latency, reliability, cost, safety, and product clarity.</p></article>
             </div>
           </div>
           <div className="fact-strip">
-            <div><strong>7</strong><span>Public systems and products</span></div>
-            <div><strong>4</strong><span>Controller modes in the flagship system</span></div>
-            <div><strong>3</strong><span>Layers: intelligence, runtime, product</span></div>
-            <div><strong>1</strong><span>End-to-end engineering mindset</span></div>
+            <div><strong>12</strong><span>Voice-agent scenarios implemented</span></div>
+            <div><strong>2h</strong><span>Scheduled job-ingestion cadence</span></div>
+            <div><strong>4</strong><span>Adaptive streaming controller modes</span></div>
+            <div><strong>E2E</strong><span>From prototype to observable product</span></div>
           </div>
         </section>
 
         <section className="skills-section editorial-section" id="skills">
           <SectionHeading
-            kicker="Systems stack / proven in the work"
-            title="THE STACK BEHIND THE REPOSITORIES"
-            note="A practical toolkit organized by the job it performs — modeling, control, transport, data, product delivery, and reliability."
+            kicker="Capabilities / proven in the work"
+            title="WHAT I CAN CONTRIBUTE ON DAY ONE"
+            note="A production-focused toolkit spanning AI behavior, backend services, data, product delivery, and system reliability."
           />
           <div className="skills-grid">
             {skillGroups.map((group) => (
@@ -459,7 +461,7 @@ function App() {
             ))}
           </div>
           <div className="skill-marquee" aria-hidden="true">
-            <span>AI/ML SYSTEMS</span><i>✦</i><span>AGENTIC CONTROL</span><i>✦</i><span>COMPUTER VISION</span><i>✦</i><span>SEMANTIC RETRIEVAL</span><i>✦</i><span>RELIABLE SOFTWARE</span>
+            <span>LLM APPLICATIONS</span><i>✦</i><span>AI AGENTS</span><i>✦</i><span>PYTHON BACKENDS</span><i>✦</i><span>RAG & EVALUATION</span><i>✦</i><span>RELIABLE SOFTWARE</span>
           </div>
         </section>
 
@@ -493,7 +495,7 @@ function App() {
               <a href="mailto:varunjosemadanu@gmail.com">varunjosemadanu@gmail.com</a>
               <a href="tel:+15185964160">+1 (518) 596-4160</a>
               <a href="https://www.linkedin.com/in/varun-jose-madan/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-              <span>Albany, NY · Open to relocate</span>
+              <span>New York · NYC/NJ, remote, or relocation</span>
             </div>
             <ScribbleArrow className="contact-arrow" />
           </div>
@@ -519,7 +521,7 @@ function App() {
 
       <footer className="site-footer">
         <a className="wordmark wordmark--footer" href="#home"><span className="wordmark-mark" aria-hidden="true"><span /><span /></span><span>VARUN<br />JOSE</span></a>
-        <p>AI/ML systems engineered from signal to decision to product.</p>
+        <p>AI products engineered from idea to evaluation to reliable production.</p>
         <div className="footer-links">
           <a href="https://github.com/varunjose" target="_blank" rel="noreferrer">GitHub ↗</a>
           <a href="https://www.linkedin.com/in/varun-jose-madan/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
